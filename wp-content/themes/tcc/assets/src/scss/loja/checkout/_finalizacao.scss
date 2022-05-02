@@ -1,0 +1,40 @@
+.woocommerce-thankyou-order-received{
+    font-size: 1.125rem;
+    font-weight: 700;
+    padding-bottom: 2rem;
+}
+
+.woocommerce-order-details__title, .woocommerce-column__title{
+    padding-bottom: 1rem;
+}
+
+.woocommerce-table__product-name{
+    a{
+        color: #000;
+
+        &:hover{
+            color: #000;
+        }
+    }
+}
+
+.woocommerce-customer-details{
+    address{
+        box-sizing: border-box;
+        line-height: 22px;
+        padding: 1rem;
+        width: 100%;
+    }
+}
+
+.back-button{
+    align-items: center;
+    background: $blue;
+    border-radius: 6px;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    max-width: 250px;
+    padding: 1rem .5rem;
+    width: 100%;
+}

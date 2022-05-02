@@ -1,0 +1,159 @@
+.content{
+    margin-top: -4rem;
+    padding: 0 1rem;
+    position: relative;
+    z-index: 10;
+
+    .wrapper{
+        background: #FFF;
+        border-radius: 12px;
+        margin: 0 auto;
+        padding: 2rem 0;
+        max-width: 1300px;
+    }
+
+    .form{
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+
+        @include mobile{
+            flex-direction: column;
+        }
+
+        .campos{
+            display: flex;
+            justify-content: flex-end;
+            width: 500px;
+
+            @include mobile{
+                flex-direction: column;
+                width: 100%;
+            }
+
+            input, select{
+                border: 1px solid $blue;
+                border-radius: 8px;
+                display: block;
+                padding: .7rem 1rem;
+                width: 50%;
+
+                @include mobile{
+                    margin-top: 1rem;
+                    width: auto;
+                }
+
+                &:focus{
+                    outline: none;
+                }
+            }
+
+            input{
+                margin-right: 1rem;
+
+                @include mobile{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    ul{
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(2, 49%);
+        padding: 2rem 0;
+
+        @include mobile{
+            grid-template-columns: repeat(1, 100%);
+        }
+
+        li{
+            transition: all .3s ease;
+            width: 100%;
+
+            @include mobile{
+                margin: 0;
+            }
+
+            .image{
+                border-radius: 6px;
+                height: 250px;
+                overflow: hidden;
+                width: 100%;
+
+                img{
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                    transition: all .3s ease;
+                    width: 100%;
+                }
+            }
+
+            .content{
+                background: #E9F2F4;
+                border-radius: 7px;
+                margin: 0 auto;
+                margin-top: -5rem;
+                max-width: 80%;
+                padding: 1rem;
+                position: relative;
+                z-index: 1;
+
+                .date{
+                    font-family: $Nunito;
+                    font-size: var(--button);
+                }
+
+                .title{
+                    font-family: $Nunito;
+                    font-weight: 700;
+                    padding: .5rem 0;
+                }
+
+                .text{
+                    font-family: $Nunito;
+                    line-height: 22px;
+                }
+
+                .button{
+                    align-items: center;
+                    color: #000;
+                    display: flex;
+                    font-family: $Nunito;
+                    justify-content: flex-end;
+                    margin-top: 1.5rem;
+                    transition: all .3s ease;
+
+                    .arrow{
+                        align-items: center;
+                        background: $ddBlue;
+                        border-radius: 100%;
+                        display: flex;
+                        height: 30px;
+                        justify-content: center;
+                        margin-left: .5rem;
+                        width: 30px;
+
+                        img{
+                            filter: invert(100%);
+                        }
+                    }
+
+                    &:hover{
+                        transform: translate(5px, 0);
+                    }
+                }
+            }
+
+            &:hover{
+                .image{
+                    img{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}

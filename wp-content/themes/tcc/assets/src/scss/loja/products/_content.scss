@@ -1,0 +1,11 @@
+.products{
+    padding: 2rem 0;
+
+    .container{
+        > .title{
+            font-size: 1.125rem;
+            font-weight: 700;
+            padding-bottom: 2rem;
+        }
+    }
+}

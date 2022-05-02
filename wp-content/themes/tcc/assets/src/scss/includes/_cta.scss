@@ -1,0 +1,51 @@
+section.cta{
+    background: $gradient;
+    margin-top: 1rem;
+    padding: 4rem 0;
+    position: relative;
+    overflow: hidden;
+
+    .title{
+        color: #FFF;
+        font-family: $Nunito;
+        font-size: var(--title);
+        margin: 0 auto;
+        max-width: 650px;
+        text-align: center;
+    }
+
+    .button{
+        background: #FFF;
+        color: $darkBlue;
+        border-radius: 100px;
+        display: flex;
+        font-family: $Nunito;
+        font-weight: 700;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 3rem;
+        padding: 1rem 0;
+        transition: all .3s ease;
+        width: 220px;
+        
+        &:hover{
+            background: #FFF;
+            color: $ddBlue;
+            transform: scale(1.05);
+        }
+    }
+
+    &::after{
+        background-image: url(../img/logo-white.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        content: '';
+        height: 400px;
+        position: absolute;
+        opacity: .2;
+        right: 0;
+        top: 1rem;
+        width: 400px;
+    }
+}

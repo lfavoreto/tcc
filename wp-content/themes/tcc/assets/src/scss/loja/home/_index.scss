@@ -1,0 +1,10 @@
+.pageLoja{
+    background-color: #f7f7f7;
+
+    @import 
+        'banner', 
+        'nav',
+        'destaques',
+        'banner-bottom'
+    ;
+}

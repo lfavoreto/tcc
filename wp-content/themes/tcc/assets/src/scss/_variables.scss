@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+
+$lightBlue : #B0D8D9;
+$blue : #72BBD8;
+$yellow : #FFD613;
+$darkBlue : #488B8C;
+$ddBlue : #2F4D59;
+
+$Nunito : 'Nunito', sans-serif;
+
+$gradient : linear-gradient(85.99deg, $blue 25.08%, $darkBlue 95.6%);
+$gradient-02 : linear-gradient(340deg, $lightBlue 25.08%, $darkBlue 95.6%);
+$gradient-03 : linear-gradient(286deg, #386262 25.08%, #0ac6ff 95.6%);
+
+:root {
+    --small: .8125rem;
+    --button: .875rem;
+    --normal: 1rem; 
+    --subtitle: 1.25rem;
+    --title: 1.875rem;
+    --large: 2.5rem;
+}
+
+@mixin mobile{
+    @media screen and (max-width: 991px) { @content; }
+}
+
+@mixin mobile-sm{
+    @media screen and (max-width: 767.99px) { @content; }
+}

@@ -1,0 +1,55 @@
+.banner{
+    padding: 2rem 0;
+
+    .item{
+        align-items: center;
+        background: linear-gradient(90deg, #F0920C 40%, #E63B10 100%);
+        border-radius: 33px;
+        box-sizing: border-box;
+        display: flex;
+        height: 275px;
+        padding: 2rem 5rem;
+
+        .title{
+            color: #FFF;
+            font-size: 2rem;
+        }
+    }
+
+    .slick-arrow{
+        background: #FFF;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 100%;
+        cursor: pointer;
+        height: 35px;
+        position: absolute;
+        top: 45%;
+        transition: all .3s ease;
+        width: 35px;
+        z-index: 1;
+
+        @include mobile{
+            top: 38%;
+        }
+
+        &.prev{
+            background-image: url(../img/icons/arrow.svg);
+            left: 1.5rem;
+            transform: scaleX(-1);
+
+            @include mobile{
+                left: .5rem;
+            }
+        }
+
+        &.next{
+            background-image: url(../img/icons/arrow.svg);
+            right: 1.5rem;
+
+            @include mobile{
+                right: .5rem;
+            }
+        }
+    }
+}

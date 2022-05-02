@@ -1,0 +1,158 @@
+.content{
+    margin-top: -4rem;
+    padding: 0 1rem;
+    position: relative;
+    z-index: 10;
+
+    .wrapper{
+        background: #FFF;
+        border-radius: 12px;
+        margin: 0 auto;
+        padding: 2rem 0;
+        max-width: 1300px;
+    }
+
+    .form{
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+
+        @include mobile{
+            flex-direction: column;
+        }
+
+        .campos{
+            display: flex;
+            justify-content: flex-end;
+            width: 500px;
+
+            @include mobile{
+                flex-direction: column;
+                width: 100%;
+            }
+
+            input, select{
+                border: 1px solid $blue;
+                border-radius: 8px;
+                display: block;
+                padding: .7rem 1rem;
+                width: 50%;
+
+                @include mobile{
+                    margin-top: 1rem;
+                    width: auto;
+                }
+
+                &:focus{
+                    outline: none;
+                }
+            }
+
+            input{
+                margin-right: 1rem;
+
+                @include mobile{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    .list{
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(3, 32%);
+        padding: 2rem 0;
+
+        @include mobile{
+            grid-template-columns: repeat(1, 100%);
+        }
+
+        .news{
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            transition: all .3s ease;
+            width: 100%;
+
+            @include mobile{
+                margin: 0;
+                margin-bottom: 2rem;
+            }
+
+            .image{
+                height: 270px;
+                overflow: hidden;
+                width: 100%;
+
+                img{
+                    height: 100%;
+                    object-fit: cover;
+                    transition: all .3s ease;
+                    width: 100%;
+                }
+            }
+
+            .content{
+                background: #FFF;
+                color: #000;
+                font-family: $Nunito;
+                padding: 1.5rem 1rem;
+
+                .title{
+                    font-weight: 800;
+                }
+
+                .text{
+                    line-height: 24px;
+                    padding: 1rem 0;
+                }
+
+                .button{
+                    align-items: center;
+                    color: #000;
+                    display: flex;
+                    font-family: $Nunito;
+                    justify-content: flex-end;
+                    margin-top: .5rem;
+                    transition: all .3s ease;
+
+                    @include mobile{
+                        margin-top: .5rem;
+                    }
+
+                    .arrow{
+                        align-items: center;
+                        background: $ddBlue;
+                        border-radius: 100%;
+                        display: flex;
+                        height: 30px;
+                        justify-content: center;
+                        margin-left: .5rem;
+                        width: 30px;
+
+                        img{
+                            filter: invert(100%);
+                        }
+                    }
+
+                    &:hover{
+                        transform: translate(5px, 0);
+                    }
+                }
+            }
+
+            &:hover{
+                transform: translate(0, -5px);
+
+                .image{
+                    img{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,182 @@
+.account{
+    padding: 2rem 0;
+
+    .container{
+        > .title{
+            font-size: 1.125rem;
+            font-weight: 600;
+            padding-bottom: 2rem;
+        }
+    }
+
+    .woocommerce{
+        align-items: stretch;
+        display: flex;
+
+        .u-column1, .u-column2{
+            h2{
+                font-size: 1.125rem;
+                font-weight: 600;
+            }
+
+            a{
+                color: #000;
+            }
+
+            .woocommerce-form-login__submit{
+                margin-top: 0;
+            }
+        }
+
+        .woocommerce-form-login, .woocommerce-form-register{
+            background: #FFF;
+            line-height: 22px;
+        }
+
+        .woocommerce-MyAccount-navigation{
+            background: #FFF;
+            border-radius: 8px;
+            box-shadow: rgb(99 99 99 / 20%) 0px 0px 4px 1px;
+            box-sizing: border-box;
+            padding: 2rem;
+            min-height: 600px;
+            width: 250px;
+
+            li{
+                &:not(:last-child){
+                    margin-bottom: 1rem;
+                }
+
+                a{
+                    color: #000;
+                    font-weight: 600;
+                }
+
+                &.is-active{
+                    a{
+                        color: $blue;
+                    }
+                }
+            }
+        }
+
+        .woocommerce-MyAccount-content{
+            background: #FFF;
+            border-radius: 8px;
+            box-shadow: rgb(99 99 99 / 20%) 0px 0px 4px 1px;
+            box-sizing: border-box;
+            margin-left: 2rem;
+            padding: 2rem;
+            width: calc(100% - 250px);
+        }
+
+        .woocommerce-MyAccount-content{
+            line-height: 22px;
+            
+            a{
+                color: #000;
+            }
+        }
+
+        .woocommerce-message{
+            margin-top: 0;
+        }
+
+        .woocommerce-orders-table{
+            thead{
+                background: $blue;
+                color: #FFF;
+            }
+        }
+
+        .woocommerce-thankyou-order-received{
+            font-size: 1.125rem;
+            font-weight: 700;
+            padding-bottom: 2rem;
+        }
+        
+        .woocommerce-order-details__title, .woocommerce-column__title{
+            padding-bottom: 1rem;
+        }
+        
+        .woocommerce-table__product-name{
+            a{
+                color: #000;
+        
+                &:hover{
+                    color: #000;
+                }
+            }
+        }
+        
+        .woocommerce-customer-details{
+            address{
+                box-sizing: border-box;
+                line-height: 22px;
+                padding: 1rem;
+                width: 100%;
+            }
+        }
+
+        mark{
+            background: none;
+        }
+
+        .woocommerce-Addresses{
+            display: flex;
+            flex-wrap: wrap;
+
+            > div{
+                margin-top: 1rem;
+                width: 100%;
+            }
+
+            .woocommerce-Address-title{
+                align-items: center;
+                background: $blue;
+                color: #fff;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 1rem;
+                padding: 1rem;
+
+                a{
+                    color: #FFF;
+                }
+            }
+        }
+
+        .form-row{
+            margin-top: .5rem;
+    
+            abbr{
+                display: none;
+            }
+    
+            input:not(.woocommerce-form__input-checkbox){
+                border: 1px solid #c4c4c4 !important;
+                border-radius: 6px;
+                box-sizing: border-box;
+                display: block;
+                height: 39px;
+                padding: .7rem 1rem;
+                width: 100%;
+        
+                &:focus{
+                    outline: none;
+                }
+        
+                &.textarea{
+                    height: 120px;
+                    resize: none;
+                }
+            }
+        }
+
+        form .button{
+            background: $blue;
+            color: #FFF;
+            margin-top: 1rem;
+        }
+    }
+}

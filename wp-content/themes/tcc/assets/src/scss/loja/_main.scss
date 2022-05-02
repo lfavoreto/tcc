@@ -1,0 +1,80 @@
+.ll-produtos{
+
+    .product{
+        background: #FFF;
+        border-radius: 8px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px;
+        display: flex;
+        flex-direction: column;
+
+        img{
+            border-bottom: 1px solid #E5E5E5;
+            margin-bottom: 0;
+            padding-bottom: 1rem;
+        }
+        
+        a{
+            color: #000;
+            padding: 1rem;
+        }
+
+        .amount{
+            color: #000;
+            font-size: 1.25rem;
+            font-weight: 800;
+        }
+
+        .button{
+            display: none;
+        }
+
+        &_cat-passeios, &_cat-guardaria{
+            overflow: hidden;
+            
+            a:first-child{
+                padding: 0;
+            }
+
+            img{
+                border: none;
+                padding-bottom: 0;
+            }
+
+            h2, .price{
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
+                text-align: center;
+            }
+
+            .price{
+                padding-bottom: 1rem;
+            }
+        }
+
+        .woocommerce-loop-product__title{
+            align-items: center;
+            display: flex;
+            line-height: 21px;
+            min-height: 42px;
+        }
+    }
+}
+
+.woocommerce-message, .woocommerce-info{
+    background: $blue;
+    border-color: $ddBlue;
+    color: #FFF;
+    margin: 1rem 0;
+
+    a{
+        color: #FFF;
+    }
+
+    &::after, &::before{
+        color: #FFF;
+    }
+}
+
+.woocommerce-error{
+    line-height: 22px;
+}

@@ -1,0 +1,35 @@
+section.about{
+    padding: 2rem 0;
+
+    .content{
+        font-family: $Nunito;
+        width: 100%;
+
+        .text{
+            line-height: 26px;
+            padding-bottom: 1rem;
+        }
+
+        .button{
+            background: $yellow;
+            border-radius: 100px;
+            color: #FFF;
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+            max-width: 220px;
+            padding: .8rem 0;
+            transition: all .3s ease;
+            width: 100%;
+
+            @include mobile{
+                margin: 1rem auto 0;
+            }
+
+            &:hover{
+                background: $darkBlue;
+                transform: scale(1.05);
+            }
+        }
+    }
+}

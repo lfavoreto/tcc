@@ -1,0 +1,167 @@
+&.single{
+    .head{
+        .title{
+            justify-content: center;
+        }
+    }
+
+    .content{
+        padding: 0;
+
+        .image{
+            height: 450px;
+            border-radius: 22px;
+            overflow: hidden;
+            width: 100%;
+
+            @media screen and (max-width: 991px) {
+                height: 200px;
+            }
+    
+            img{
+                height: 100%;
+                object-fit: cover;
+                width: 100%;
+            }
+        }
+
+        .box{
+            margin-top: 2rem;
+            padding-bottom: 3rem;
+
+            .date{
+                color: $darkBlue;
+                display: block;
+                font-weight: 600;
+                margin-bottom: .5rem;
+                text-align: center;
+            }
+
+            p{
+                line-height: 25px;
+
+                &.text{
+                    display: block;
+                    text-align: center;
+                }
+
+                &:not(:last-child){
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+
+    .relacionados{
+        padding: 2rem 0;
+
+        @media screen and (max-width: 991px) {
+            padding: 0 0 1rem;
+        }
+        
+        .stitle{
+            font-size: 1.125rem;
+            font-weight: 800;
+            text-align: center;
+        }
+
+        .blog{
+            display: flex;
+            justify-content: center;
+            padding-top: 2rem;
+    
+            @include mobile{
+                flex-wrap: wrap;       
+            }
+
+            .news{
+                border-radius: 20px;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                display: flex;
+                flex-direction: column;
+                margin: 0 .5rem;
+                overflow: hidden;
+                transition: all .3s ease;
+                width: 30%;
+
+                @include mobile{
+                    margin: 0;
+                    margin-bottom: 2rem;
+                    width: 100%;
+                }
+
+                .image{
+                    height: 210px;
+                    overflow: hidden;
+                    width: 100%;
+
+                    img{
+                        height: 100%;
+                        object-fit: cover;
+                        transition: all .3s ease;
+                        width: 100%;
+                    }
+                }
+
+                .content{
+                    background: #FFF;
+                    color: #000;
+                    font-family: $Nunito;
+                    padding: 1.5rem 1rem;
+
+                    .title{
+                        font-weight: 800;
+                    }
+
+                    .text{
+                        line-height: 24px;
+                        padding: 1rem 0;
+                    }
+
+                    .button{
+                        align-items: center;
+                        color: #000;
+                        display: flex;
+                        font-family: $Nunito;
+                        justify-content: flex-end;
+                        margin-top: 1.5rem;
+                        transition: all .3s ease;
+
+                        @include mobile{
+                            margin-top: .5rem;
+                        }
+
+                        .arrow{
+                            align-items: center;
+                            background: $ddBlue;
+                            border-radius: 100%;
+                            display: flex;
+                            height: 30px;
+                            justify-content: center;
+                            margin-left: .5rem;
+                            width: 30px;
+
+                            img{
+                                filter: invert(100%);
+                            }
+                        }
+
+                        &:hover{
+                            transform: translate(5px, 0);
+                        }
+                    }
+                }
+
+                &:hover{
+                    transform: translate(0, -5px);
+
+                    .image{
+                        img{
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

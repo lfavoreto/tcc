@@ -1,0 +1,12 @@
+.breadcrumb{
+    color: #FFF;
+    display: flex;
+    font-family: $Nunito;
+    font-size: var(--button);
+    padding: 1rem 0;
+    
+    .link{
+        color: #FFF;
+        margin-right: 1rem;
+    }
+}

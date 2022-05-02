@@ -1,0 +1,10 @@
+.checkout-page{
+    @import 
+        'content', 
+        'finalizacao'
+    ;
+
+    @media screen and (min-width: 991px) {
+        min-height: 768px;
+    }
+}

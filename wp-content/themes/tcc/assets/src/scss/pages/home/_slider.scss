@@ -1,0 +1,123 @@
+section.slider{
+    .banner{
+        background: $gradient;
+        position: relative;
+
+        .image{
+            height: 550px;
+            float: right;
+            width: 50%;
+
+            @include mobile{
+                height: 430px;
+                width: 100%;
+            }
+
+            img{
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                width: 100%;
+            }
+        }
+
+        .position{
+            height: 100%;
+            position: absolute;
+            top: 0;
+            width: 100%;
+
+            > .container{
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                justify-content: center;
+
+                @include mobile{
+                    justify-content: flex-start;
+                }
+
+                .hero{
+                    height: 100%;
+                    position: absolute;
+                    right: 0;
+                    width: 50%;
+
+                    img{
+                        height: 100%;
+                        object-fit: contain;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .content{
+            max-width: 400px;
+
+            @include mobile{
+                padding-top: 4rem;
+            }
+
+            .title{
+                color: #FFF;
+                font-family: $Nunito;
+                font-size: var(--large);
+            }
+        }
+
+        .button{
+            background: #FFF;
+            border-radius: 100px;
+            color: $darkBlue;
+            display: flex;
+            font-family: $Nunito;
+            font-weight: 700;
+            justify-content: center;
+            margin-top: 2rem;
+            padding: 1rem 0;
+            transition: all .3s ease;
+            width: 220px;
+
+            &:hover{
+                background: #FFF;
+                color: $ddBlue;
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    .banner-dots{
+        display: flex;
+        justify-content: center;
+        margin-top: -3rem;
+        z-index: 1;
+        position: relative;
+        
+        ul{
+            display: flex;
+
+            li{
+                margin: 0 .2rem;
+
+                &.slick-active{
+                    .dot{
+                        background: $ddBlue;
+                        padding: 0 1rem;
+                    }
+                }
+            }
+        }
+
+        .dot{
+            background: #FFF;
+            border-radius: 10px;
+            box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+            cursor: pointer;
+            display: flex;
+            height: 15px;
+            transition: all .3s ease;
+            width: 15px;
+        }
+    }
+}

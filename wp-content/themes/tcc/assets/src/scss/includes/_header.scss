@@ -1,0 +1,262 @@
+header{
+    box-shadow: rgb(0 0 0 / 11%) -9px 1px 17px 3px;
+    
+    @include mobile{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+
+    &.dark{
+        background: $blue;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 999;
+
+        .cart-customlocation{
+            overflow: visible !important;
+            position: relative;
+            
+            .number{
+                align-items: center;
+                background: #FFF;
+                border-radius: 100%;
+                bottom: -10px;
+                color: $blue;
+                display: flex;
+                font-size: .875rem;
+                height: 20px;
+                justify-content: center;
+                position: absolute;
+                right: -10px;
+                width: 20px;
+            }
+        }
+    }
+
+    > .container{
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 1rem 1rem;
+        padding-bottom: .5rem;
+        position: relative;
+
+        @include mobile{
+            justify-content: center;
+        }
+    }
+
+    .simple{
+        .redes-sociais{
+            display: flex;
+            justify-content: flex-end;
+            width: 380px;
+    
+            @include mobile{
+                justify-content: center;
+                max-height: 0;
+                order: 2;
+                overflow: hidden;
+                transition: all .3s ease;
+                width: 100%;
+            }
+    
+            .icon{
+                align-items: center;
+                background: $ddBlue;
+                border-radius: 100%;
+                display: flex;
+                height: 35px;
+                justify-content: center;
+                margin-left: .5rem;
+                transition: all .3s ease;
+                width: 35px;
+    
+                @include mobile{
+                    margin: 0 .5rem;
+                }
+    
+                img{
+                    height: 50%;
+                    filter: invert(100%);
+                    object-fit: cover;
+                    width: 50%;
+                }
+    
+                &:hover{
+                    background: $blue;
+                    transform: translate(0, -5px);
+                }
+            }
+    
+            &.openMenu{
+                margin-top: .5rem;
+                max-height: 200px
+            }
+        }
+    
+        .logo{
+            display: block;
+            justify-self: center;
+    
+            img{
+                width: 120px;
+    
+                @include mobile{
+                    width: 85px;
+                }
+            }
+        }
+    
+        nav{
+            width: 380px;
+            
+            @include mobile{
+                max-height: 0;
+                order: 1;
+                overflow: hidden;
+                transition: all .3s ease;
+                width: 100%;
+            }
+    
+            ul{
+                display: flex;
+                justify-content: flex-start;
+                width: 100%;
+    
+                @include mobile{
+                    flex-direction: column;
+                    margin-top: .5rem;
+                }
+                
+                li{
+                    margin-right: 1rem;
+    
+                    @include mobile{
+                        margin: 0;
+    
+                        &:last-child{
+                            a{
+                                border-bottom: 1px solid #00000010;
+                            }
+                        }
+                    }
+    
+                    a{
+                        color: #000;
+                        font-family: $Nunito;
+                        font-size: var(--button);
+                        transition: all .3s ease;
+    
+                        @include mobile{
+                            display: block;
+                            border-top: 1px solid #00000010;
+                            padding: .7rem 0;
+                            text-align: center;
+                            width: 100%;
+                        }
+    
+                        &:hover{
+                            color: $darkBlue;
+                        }
+                    }
+                }
+            }
+    
+            &.openMenu{
+                max-height: 300px;
+            }
+        }
+    
+        .mobile{
+            display: none;
+            position: absolute;
+            right: 1rem;
+            top: 34px;
+            
+            @include mobile{
+                align-items: center;
+                background: $blue;
+                border-radius: 100%;
+                cursor: pointer;
+                display: flex;
+                flex-shrink: 0;
+                height: 45px;
+                justify-content: center;
+                width: 45px;
+            }
+    
+            &-button{
+                background: #FFF;
+                border-radius: 20px;
+                height: 4px;
+                position: relative;
+                transition: all .3s ease;
+                width: 22px;
+    
+                &::after, &::before{
+                    background: inherit;
+                    border-radius: inherit;
+                    content: '';
+                    height: inherit;
+                    position: absolute;
+                    top: -7px;
+                    transition: inherit;
+                    width: inherit;
+                }
+    
+                &::after{ top: -7px; }
+                &::before{ top: 7px; }
+            }
+    
+            &.buttonChangeToClose{
+                background: $darkBlue;
+    
+                .mobile-button{
+                    transform: rotate(45deg);
+    
+                    &::after, &::before{
+                        transform: rotate(-90deg);
+                        top: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .loja{
+        .logo{
+            display: block;
+            justify-self: center;
+    
+            img{
+                width: 65px;
+    
+                @include mobile{
+                    width: 85px;
+                }
+            }
+        }
+    
+        .menu{
+            display: flex;
+    
+            a{
+                display: flex;
+                height: 28px;
+                margin-left: 1rem;
+                overflow: hidden;
+                width: 28px;
+    
+                img{
+                    filter:  brightness(0) invert(1);
+                    height: 100%;
+                    object-fit: contain;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+}

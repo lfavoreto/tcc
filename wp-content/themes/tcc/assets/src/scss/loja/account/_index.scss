@@ -1,0 +1,9 @@
+.account-page{
+    background-color: #f7f7f7;
+    
+    @import 'painel';
+
+    @media screen and (min-width: 991px) {
+        min-height: 768px;
+    }
+}

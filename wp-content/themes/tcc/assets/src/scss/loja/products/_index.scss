@@ -1,0 +1,9 @@
+.products-page{
+    @import 'content';
+
+    background-color: #f7f7f7;
+
+    @media screen and (min-width: 991px) {
+        min-height: 768px;
+    }
+}

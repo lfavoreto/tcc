@@ -1,0 +1,53 @@
+footer{
+    background: $ddBlue;
+    color: #FFF;
+    padding: 1rem 0 .5rem;
+
+    @include mobile{
+        padding: 1rem 0;
+    }
+
+    > .container{
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+
+        @include mobile{
+            flex-direction: column;
+        }
+    }
+
+    .text{
+        font-family: $Nunito;
+        width: 300px;
+
+        @include mobile{
+            text-align: center;
+            width: 100%;
+        }
+
+        strong{
+            color: $blue;
+        }
+
+        &:last-child{
+            text-align: right;
+
+            @include mobile{
+                padding-top: .4rem;
+                text-align: center;
+            }
+        }
+    }
+
+    .logo{
+        img{
+            width: 100px;
+        }
+
+        @include mobile{
+            padding-bottom: .5rem;
+            order: -1;
+        }
+    }
+}

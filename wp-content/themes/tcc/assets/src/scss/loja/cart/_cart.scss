@@ -1,0 +1,65 @@
+section.cart{
+    padding: 2rem 0;
+
+    .woocommerce-cart-form{
+        
+        thead{
+            background: $blue;
+            color: #FFF;
+        }
+
+        .product-thumbnail{
+            a{
+                display: block;
+                height: 100px;
+                width: 100px;
+    
+                img{
+                    height: 100%;
+                    object-fit: contain;
+                    width: 100%;
+                }
+            }
+        }
+
+        .product-name{
+            a{
+                color: #000;
+            }
+        }
+
+        .coupon{
+            align-items: center;
+            display: flex;
+
+            input{
+                display: block;
+                height: 28px;
+                margin-right: 1rem;
+                max-width: 130px;
+                width: 100%;
+
+                &:focus{
+                    outline: none;
+                }
+            }
+        }
+    }
+
+    .cart_totals{
+        table{
+            margin-top: 1rem;
+        }
+    }
+
+    .wc-proceed-to-checkout{
+        a{
+            background: $blue;
+            transition: all .3s ease;
+
+            &:hover{
+                background: $ddBlue;
+            }
+        }
+    }
+}

@@ -1,0 +1,88 @@
+section.checkout{
+    padding: 2rem 0;
+
+    .woocommerce{
+        z-index: 99;
+    }
+
+    .woocommerce-form-coupon-toggle{
+        display: none;
+    }
+
+    .form-row{
+        margin-top: 1rem;
+
+        abbr{
+            display: none;
+        }
+
+        input{
+            border: 1px solid #c4c4c4 !important;
+            border-radius: 6px;
+            box-sizing: border-box;
+            display: block;
+            height: 39px;
+            padding: .7rem 1rem;
+            width: 100%;
+    
+            &:focus{
+                outline: none;
+            }
+    
+            &.textarea{
+                height: 120px;
+                resize: none;
+            }
+        }
+    }
+
+    .woocommerce-checkout{
+        > h3{
+            font-weight: 700;
+            padding: 2rem 0 1rem;
+        }
+
+        .cart-subtotal{
+            display: none;
+        }
+    }
+
+    .col-1{
+        max-width: 550px;
+        width: 100%;
+
+        .woocommerce-billing-fields{
+            > h3{
+                border-bottom: 1px solid #c4c4c4;
+                font-size: 1.125rem;
+                font-weight: 700;
+                padding-bottom: 1rem;
+            }
+        }
+    }
+}
+
+.woocommerce-checkout-payment#payment{
+    background: none;
+
+    ul.payment_methods{
+        padding: 0;
+    }
+
+    .form-row{
+        line-height: 22px;
+        padding: 1rem 0;
+
+        a{
+            color: #000;
+            
+            &:hover{
+                color: #000;
+            }
+        }
+    }
+
+    .button{
+        background: $blue;
+    }
+}
