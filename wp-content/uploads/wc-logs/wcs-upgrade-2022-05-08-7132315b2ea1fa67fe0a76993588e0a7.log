@@ -1,0 +1,10 @@
+05-08-2022 @ 02:56:46 - 3.1.0 - No subscription webhooks found using API version 3. No updates needed.
+05-08-2022 @ 02:56:46 - 4.1.0 upgrade complete from Subscriptions v0 while WooCommerce WC_VERSION 6.4.1 and database version 6.4.1 was active.
+05-08-2022 @ 02:56:46 - Environment info:
+05-08-2022 @ 02:56:46 -     WordPress Version : 5.9.3
+05-08-2022 @ 02:56:46 - Active Plugins:
+05-08-2022 @ 02:56:46 -     Advanced Custom Fields by Delicious Brains – 5.12.2
+05-08-2022 @ 02:56:46 -     Loco Translate by Tim Whitlock – 2.6.1
+05-08-2022 @ 02:56:46 -     WooCommerce Stripe Gateway by WooCommerce – 6.3.0
+05-08-2022 @ 02:56:46 -     WooCommerce Subscriptions by WooCommerce – 4.1.0
+05-08-2022 @ 02:56:46 -     WooCommerce by Automattic – 6.4.1

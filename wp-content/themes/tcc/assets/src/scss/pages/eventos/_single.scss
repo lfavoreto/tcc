@@ -8,6 +8,53 @@
     .content{
         padding: 0;
 
+        .redes-sociais{
+            align-items: center;
+            display: flex;
+    
+            @include mobile{
+                justify-content: center;
+                max-height: 0;
+                order: 2;
+                overflow: hidden;
+                transition: all .3s ease;
+                width: 100%;
+            }
+    
+            .icon{
+                align-items: center;
+                background: $ddBlue;
+                border-radius: 100%;
+                display: flex;
+                height: 35px;
+                justify-content: center;
+                margin-left: .5rem;
+                transition: all .3s ease;
+                width: 35px;
+    
+                @include mobile{
+                    margin: 0 .5rem;
+                }
+    
+                img{
+                    height: 50%;
+                    filter: invert(100%);
+                    object-fit: cover;
+                    width: 50%;
+                }
+    
+                &:hover{
+                    background: $blue;
+                    transform: translate(0, -5px);
+                }
+            }
+    
+            &.openMenu{
+                margin-top: .5rem;
+                max-height: 200px
+            }
+        }
+
         .image{
             height: 450px;
             border-radius: 22px;
@@ -105,6 +152,8 @@
                     margin-top: -5rem;
                     max-width: 80%;
                     padding: 1rem;
+                    padding-bottom: 30px;
+                    min-height: 160px;
                     position: relative;
                     z-index: 1;
     
@@ -130,7 +179,9 @@
                         display: flex;
                         font-family: $Nunito;
                         justify-content: flex-end;
-                        margin-top: 1.5rem;
+                        position: absolute;
+                        bottom: 1rem;
+                        right: 1rem;
                         transition: all .3s ease;
     
                         .arrow{

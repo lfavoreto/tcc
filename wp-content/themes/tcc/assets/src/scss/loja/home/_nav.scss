@@ -29,6 +29,10 @@
             flex-direction: column;
             width: 20%;
 
+            a{
+                color: #000;
+            }
+
             @include mobile{
                 margin: 0 .5rem;
                 padding-bottom: 2rem;

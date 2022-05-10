@@ -8,7 +8,11 @@
         <div class="container">
             <div class="content">
                 <div class="item">
-                    <h2 class="title">Título</h2>
+                    <h2 class="title">Produtos com até <strong>40%</strong> de desconto</h2>
+                    <div class="box-image">
+                        <img src="<?= $assets; ?>/Kayak-Free.webp" alt="">
+                    </div>
+                    <a href="#" class="button">Ver produtos</a>
                 </div>
                 <div class="item">
                     <h2 class="title">Título 2</h2> 
@@ -69,7 +73,7 @@
         <div class="container">
             <h2 class="title">Produtos em Destaques</h2>
 
-            <?= do_shortcode('[products limit="4" columns="4" orderby="popularity" class="ll-produtos" category="locacao, passeios" cat_operator="NOT IN"]') ?>
+            <?= do_shortcode('[products limit="4" columns="4" orderby="popularity" class="ll-produtos" category="passeios" cat_operator="NOT IN"]') ?>
         </div>
     </section>
 
@@ -81,7 +85,7 @@
 
     <section class="destaques">
         <div class="container">
-            <h2 class="title">Passeios</h2>
+            <h2 class="title">Aulas e Passeios</h2>
 
             <?= do_shortcode('[products limit="4" columns="4" orderby="popularity" class="ll-produtos" category="passeios"]') ?>
         </div>

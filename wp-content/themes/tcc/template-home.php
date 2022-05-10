@@ -14,8 +14,8 @@
                     <div class="position">
                         <div class="container">
                             <div class="content">
-                                <h2 class="title">Lorem ipsum dolor sit amet consectetur adipiscing</h2>
-                                <a href="#" class="button">Lorem Ipsum</a>
+                                <h2 class="title">Venha conhecer e se surpreender com a aventura!</h2>
+                                <a href="#" class="button">Veja nossos passeios</a>
                             </div>
                         </div>
                     </div>
@@ -46,31 +46,31 @@
                     <div class="image">
                         <img src="<?= $assets; ?>/prancha-de-surf.webp" alt="">
                     </div>
-                    <p class="text">Lorem Ipsum</p>
+                    <p class="text">Produtos</p>
                 </li>
                 <li>
                     <div class="image">
                         <img src="<?= $assets; ?>/colete-salva-vidas.webp" alt="">
                     </div>
-                    <p class="text">Lorem Ipsum</p>
+                    <p class="text">Acessórios</p>
                 </li>
                 <li>
                     <div class="image">
                         <img src="<?= $assets; ?>/prancha-de-remo.webp" alt="">
                     </div>
-                    <p class="text">Lorem Ipsum</p>
+                    <p class="text">Locação</p>
                 </li>
                 <li>
                     <div class="image">
                         <img src="<?= $assets; ?>/canoa.webp" alt="">
                     </div>
-                    <p class="text">Lorem Ipsum</p>
+                    <p class="text">Passeios</p>
                 </li>
                 <li>
                     <div class="image">
                         <img src="<?= $assets; ?>/armazem.webp" alt="">
                     </div>
-                    <p class="text">Lorem Ipsum</p>
+                    <p class="text">Guardaria</p>
                 </li>
             </ul>
         </div>
@@ -86,9 +86,9 @@
             <div class="content">
                 <h2 class="title">Sobre</h2>
                 <p class="text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consectetur, nulla quis pharetra aliquam, nisi nisi scelerisque nisi, a eleifend velit dolor at dolor. Sed sit amet eros nec turpis facilisis interdum vitae in urna. Etiam maximus felis non fermentum sagittis. Duis at odio turpis. 
+                    Com o objetivo de minimizar o estresse diário e também pela possibilidade de praticar uma atividade física em ambiente aberto, com mais liberdade, é que os alunos da Guardaí recorrem ao esporte. Outros benefícios que a modalidade proporciona são: bom condicionamento físico, aprimora a concentração E desenvolve o espírito de equipe.
                 </p>
-                <a href="#" class="button">Lorem Ipsum</a>
+                <a href="#" class="button">Leia mais</a>
             </div>
         </div>
     </section>

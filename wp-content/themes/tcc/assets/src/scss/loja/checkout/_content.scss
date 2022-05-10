@@ -10,7 +10,6 @@ section.checkout{
     }
 
     .form-row{
-        margin-top: 1rem;
 
         abbr{
             display: none;
@@ -71,6 +70,7 @@ section.checkout{
 
     .form-row{
         line-height: 22px;
+        margin: 0;
         padding: 1rem 0;
 
         a{
@@ -81,6 +81,7 @@ section.checkout{
             }
         }
     }
+
 
     .button{
         background: $blue;

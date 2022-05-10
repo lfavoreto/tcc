@@ -1,0 +1,90 @@
+2022-05-01T17:37:18+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on string in C:\xampp\htdocs\tcc\wp-content\plugins\woocommerce\templates\single-product\sale-flash.php:25
+Stack trace:
+#0 C:\xampp\htdocs\tcc\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\xampp\htdocs\tcc\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1664): wc_get_template('single-product/...')
+#2 C:\xampp\htdocs\tcc\wp-includes\class-wp-hook.php(307): woocommerce_show_product_sale_flash('')
+#3 C:\xampp\htdocs\tcc\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#4 C:\xampp\htdocs\tcc\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\tcc\wp-content\plugins\woocommerce\templates\content-single-product.php(43): do_action('woocommerce_bef...')
+#6 C:\xampp\htdocs\tcc\wp-includes\template.php(772): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\tcc\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('C:\\xampp\\htdocs...', f, em C:\xampp\htdocs\tcc\wp-content\plugins\woocommerce\templates\single-product\sale-flash.php, na linha 25
+
+2022-05-01T17:37:37+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on string in C:\xampp\htdocs\tcc\wp-content\plugins\woocommerce\templates\single-product\sale-flash.php:25
+Stack trace:
+#0 C:\xampp\htdocs\tcc\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\xampp\htdocs\tcc\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1664): wc_get_template('single-product/...')
+#2 C:\xampp\htdocs\tcc\wp-includes\class-wp-hook.php(307): woocommerce_show_product_sale_flash('')
+#3 C:\xampp\htdocs\tcc\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#4 C:\xampp\htdocs\tcc\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\tcc\wp-content\plugins\woocommerce\templates\content-single-product.php(43): do_action('woocommerce_bef...')
+#6 C:\xampp\htdocs\tcc\wp-includes\template.php(772): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\tcc\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('C:\\xampp\\htdocs...', f, em C:\xampp\htdocs\tcc\wp-content\plugins\woocommerce\templates\single-product\sale-flash.php, na linha 25
+
+2022-05-01T18:02:39+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on string in C:\xampp\htdocs\tcc\wp-content\plugins\woocommerce\templates\single-product\sale-flash.php:25
+Stack trace:
+#0 C:\xampp\htdocs\tcc\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\xampp\htdocs\tcc\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1664): wc_get_template('single-product/...')
+#2 C:\xampp\htdocs\tcc\wp-includes\class-wp-hook.php(307): woocommerce_show_product_sale_flash('')
+#3 C:\xampp\htdocs\tcc\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#4 C:\xampp\htdocs\tcc\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\tcc\wp-content\plugins\woocommerce\templates\content-single-product.php(43): do_action('woocommerce_bef...')
+#6 C:\xampp\htdocs\tcc\wp-includes\template.php(772): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\tcc\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('C:\\xampp\\htdocs...', f, em C:\xampp\htdocs\tcc\wp-content\plugins\woocommerce\templates\single-product\sale-flash.php, na linha 25
+
+2022-05-01T20:54:52+00:00 CRITICAL Uncaught Error: Call to undefined function get_the_price() in C:\xampp\htdocs\tcc\wp-content\themes\tcc\single-product.php:12
+Stack trace:
+#0 C:\xampp\htdocs\tcc\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\tcc\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\tcc\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown, em C:\xampp\htdocs\tcc\wp-content\themes\tcc\single-product.php, na linha 12
+
+2022-05-01T20:55:27+00:00 CRITICAL Uncaught Error: Call to undefined function post() in C:\xampp\htdocs\tcc\wp-content\themes\tcc\single-product.php:12
+Stack trace:
+#0 C:\xampp\htdocs\tcc\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\tcc\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\tcc\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown, em C:\xampp\htdocs\tcc\wp-content\themes\tcc\single-product.php, na linha 12
+
+2022-05-01T20:57:34+00:00 CRITICAL Uncaught Error: Call to a member function get_name() on bool in C:\xampp\htdocs\tcc\wp-content\themes\tcc\single-product.php:10
+Stack trace:
+#0 C:\xampp\htdocs\tcc\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\tcc\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\tcc\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown, em C:\xampp\htdocs\tcc\wp-content\themes\tcc\single-product.php, na linha 10
+
+2022-05-01T20:58:36+00:00 CRITICAL Uncaught Error: Call to a member function get_attribute() on bool in C:\xampp\htdocs\tcc\wp-content\themes\tcc\single-product.php:10
+Stack trace:
+#0 C:\xampp\htdocs\tcc\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\tcc\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\tcc\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown, em C:\xampp\htdocs\tcc\wp-content\themes\tcc\single-product.php, na linha 10
+
+2022-05-01T20:59:10+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on bool in C:\xampp\htdocs\tcc\wp-content\themes\tcc\single-product.php:10
+Stack trace:
+#0 C:\xampp\htdocs\tcc\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\tcc\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\tcc\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown, em C:\xampp\htdocs\tcc\wp-content\themes\tcc\single-product.php, na linha 10
+
+2022-05-01T20:59:37+00:00 CRITICAL Uncaught Error: Call to a member function get_regular_price() on bool in C:\xampp\htdocs\tcc\wp-content\themes\tcc\single-product.php:10
+Stack trace:
+#0 C:\xampp\htdocs\tcc\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\tcc\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\tcc\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown, em C:\xampp\htdocs\tcc\wp-content\themes\tcc\single-product.php, na linha 10
+
+2022-05-01T21:03:25+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WC_Product::get_attribute(), 0 passed in C:\xampp\htdocs\tcc\wp-content\themes\tcc\single-product.php on line 11 and exactly 1 expected in C:\xampp\htdocs\tcc\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-product.php:1959
+Stack trace:
+#0 C:\xampp\htdocs\tcc\wp-content\themes\tcc\single-product.php(11): WC_Product->get_attribute()
+#1 C:\xampp\htdocs\tcc\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\tcc\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\tcc\index.php(17): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown, em C:\xampp\htdocs\tcc\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-product.php, na linha 1959
+

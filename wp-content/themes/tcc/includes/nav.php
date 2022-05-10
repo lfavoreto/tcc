@@ -1,5 +1,6 @@
 <nav>
     <ul>
+        <li><a href="<?= home_url() ?>/quem-somos">Home</a></li>
         <li><a href="<?= home_url() ?>/quem-somos">Quem somos</a></li>
         <li><a href="<?= home_url() ?>/servicos">Serviços</a></li>
         <li><a href="<?= home_url() ?>/eventos">Eventos</a></li>

@@ -15,6 +15,12 @@ section.content{
             flex-direction: column;
         }
 
+        &.product_cat-guardaria{
+            .woocommerce-product-gallery .woocommerce-product-gallery__image>a img{
+                object-fit: cover;
+            }
+        }
+
         .woocommerce-product-gallery{
             display: flex;
             margin: 2rem 0;

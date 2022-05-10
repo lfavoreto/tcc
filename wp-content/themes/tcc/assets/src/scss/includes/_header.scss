@@ -1,4 +1,25 @@
-header{
+.admin{
+    background-color: $ddBlue;
+    padding: .5rem 0 .2rem;
+
+    .container{
+        display: flex;
+        justify-content: flex-end;
+        
+        a{
+            color: #FFF;
+            font-size: .875rem;
+        
+            img{
+                filter: invert(100);
+                margin-right: .5rem;
+                width: 12px;
+            }
+        }
+    }
+}
+
+body > header{
     box-shadow: rgb(0 0 0 / 11%) -9px 1px 17px 3px;
     
     @include mobile{
@@ -10,7 +31,7 @@ header{
         position: sticky;
         top: 0;
         width: 100%;
-        z-index: 999;
+        z-index: 999999;
 
         .cart-customlocation{
             overflow: visible !important;
@@ -51,7 +72,7 @@ header{
         .redes-sociais{
             display: flex;
             justify-content: flex-end;
-            width: 380px;
+            width: 430px;
     
             @include mobile{
                 justify-content: center;
@@ -110,7 +131,7 @@ header{
         }
     
         nav{
-            width: 380px;
+            width: 430px;
             
             @include mobile{
                 max-height: 0;
@@ -235,6 +256,34 @@ header{
     
                 @include mobile{
                     width: 85px;
+                }
+            }
+        }
+
+        .header__search{
+            width: 450px;
+
+            input{
+                border: none !important;
+            }
+        }
+
+        .hh{
+            align-items: center;
+            display: flex;
+            
+            ul{
+                align-content: start;
+                display: flex;
+                margin-left: 1rem;
+                
+                li{
+                    
+                    a{
+                        color: #FFF;
+                        font-size: .875rem;
+                        margin-left: 1rem;
+                    }
                 }
             }
         }

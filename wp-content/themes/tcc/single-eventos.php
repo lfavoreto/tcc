@@ -25,6 +25,11 @@
                     <?= get_field('texto') ?>
                 </div>
             </div>
+            <div class="redes-sociais">
+                Compartilhar
+                <a href="#"><div class="icon"><img src="<?= $assets; ?>/icons/facebook.svg" alt=""></div></a>
+                <a href="#"><div class="icon"><img src="<?= $assets; ?>/icons/whatsapp.svg" alt=""></div></a>
+            </div>
         </div>
     </section>
 

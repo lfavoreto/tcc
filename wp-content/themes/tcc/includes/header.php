@@ -1,3 +1,9 @@
+<section class="admin">
+    <div class="container">
+        <a href="<?= home_url() ?>/admin"><img src="<?= $assets; ?>/icons/loja/user.svg" alt="">Área do Administrador</a>
+    </div>
+</section>
+
 <header>
     <div class="container simple">
         

@@ -96,6 +96,8 @@ section.noticias{
                 color: #000;
                 font-family: $Nunito;
                 padding: 1.5rem 1rem;
+                position: relative;
+                min-height: 238px;
 
                 .title{
                     font-weight: 800;
@@ -112,7 +114,9 @@ section.noticias{
                     display: flex;
                     font-family: $Nunito;
                     justify-content: flex-end;
-                    margin-top: 1.5rem;
+                    position: absolute;
+                    bottom: 1rem;
+                    right: 1rem;
                     transition: all .3s ease;
 
                     @include mobile{
