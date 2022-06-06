@@ -11,7 +11,7 @@
         <div class="position">
             <div class="container">
                 <?php include 'includes/breadcrumb.php'; ?>
-                <h2 class="title"><?= get_the_title(); ?></h2>
+                <h2 class="title">Eventos</h2>
             </div>
         </div>
     </section>
@@ -19,13 +19,11 @@
     <section class="content">
         <div class="wrapper">
             <div class="container">
-                <form action="#" class="form">
+                <form role="search" action="<?= esc_url( home_url('noticias/') );?>" method="GET" class="form">
                     <h3 class="text">Faça sua busca agora mesmo!</h3>
                     <div class="campos">
-                        <input type="text" placeholder="Buscar">
-                        <select name="" id="">
-                            <option value="">Categorias</option>
-                        </select>
+                        <input type="text" name="s" id="s" placeholder="Buscar">
+                        <?php wp_dropdown_categories();?>
                     </div>
                 </form>
 

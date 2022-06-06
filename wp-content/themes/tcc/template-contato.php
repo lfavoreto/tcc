@@ -58,7 +58,7 @@
                             </div>
                             <div class="text">
                                 Atendimento
-                                <a href="#" class="number">(13) 00000-0000</a>
+                                <a href="tel:+5513000000000" class="number">(13) 00000-0000</a>
                             </div>
                         </li>
                         <li>
@@ -67,7 +67,7 @@
                             </div>
                             <div class="text">
                                 Fale conosco
-                                <a href="#" class="number">(13) 00000-0000</a>
+                                <a href="https://wa.me/5513000000000" target="_blank" class="number">(13) 00000-0000</a>
                             </div>
                         </li>
                         <li>
@@ -75,7 +75,7 @@
                                 <img src="<?= $assets; ?>/icons/contato/email.svg" alt="">
                             </div>
                             <div class="text">
-                                <a href="#" class="number">loremipsum@gmail.com</a>
+                                <a href="mailto:contato@guardai.com.br" class="number">contato@guardai.com.br</a>
                             </div>
                         </li>
                     </ul>

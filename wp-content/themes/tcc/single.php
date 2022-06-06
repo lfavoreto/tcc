@@ -8,7 +8,7 @@
         <div class="position">
             <div class="container">
                 <?php include 'includes/breadcrumb.php'; ?>
-                <h2 class="title"><?= get_the_title(); ?></h2>
+                <h2 class="title" id="postName"><?= get_the_title(); ?></h2>
             </div>
         </div>
     </section>
@@ -23,6 +23,20 @@
                     <?php 
                         echo get_the_content();
                     ?>
+                </div>
+            </div>
+            <div class="redes-sociais share">
+                Compartilhar
+                <div class="likely" data-url="<?= get_the_permalink() ?>">
+                    <div class="facebook" data-quote="<?= get_the_title(); ?>">
+                        <span class="sm"><div class="icon"><img src="<?= $assets; ?>/icons/facebook.svg" alt=""></div></span>
+                    </div>
+                    <a href="" id="whatsapp-share-btt" rel="nofollow" target="_blank">
+                        <span class="sm"><div class="icon"><img src="<?= $assets; ?>/icons/whatsapp.svg" alt=""></div></span>
+                    </a>
+                    <div class="whatsapp">
+                        <span class="sm"><div class="icon"><img src="<?= $assets; ?>/icons/whatsapp.svg" alt=""></div></span>
+                    </div>
                 </div>
             </div>
         </div>

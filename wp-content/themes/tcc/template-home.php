@@ -15,7 +15,7 @@
                         <div class="container">
                             <div class="content">
                                 <h2 class="title">Venha conhecer e se surpreender com a aventura!</h2>
-                                <a href="#" class="button">Veja nossos passeios</a>
+                                <a href="<?= home_url() ?>/passeios" class="button">Veja nossos passeios</a>
                             </div>
                         </div>
                     </div>
@@ -27,8 +27,8 @@
                     <div class="position">
                         <div class="container">
                             <div class="content">
-                                <h2 class="title">Lorem ipsum dolor sit amet consectetur adipiscing</h2>
-                                <a href="#" class="button">Lorem Ipsum</a>
+                                <h2 class="title">Aulas de Stund Up Paddle e aluguel equipamentos</h2>
+                                <a href="<?= home_url() ?>/servicos" class="button">Veja mais</a>
                             </div>
                         </div>
                     </div>
@@ -43,34 +43,44 @@
             <h2 class="title">Nossos Serviços</h2>
             <ul>
                 <li>
-                    <div class="image">
-                        <img src="<?= $assets; ?>/prancha-de-surf.webp" alt="">
-                    </div>
-                    <p class="text">Produtos</p>
+                    <a href="<?= home_url() ?>/produtos">
+                        <div class="image">
+                            <img src="<?= $assets; ?>/prancha-de-surf.webp" alt="">
+                        </div>
+                        <p class="text">Produtos</p>
+                    </a>
                 </li>
                 <li>
-                    <div class="image">
-                        <img src="<?= $assets; ?>/colete-salva-vidas.webp" alt="">
-                    </div>
-                    <p class="text">Acessórios</p>
+                    <a href="<?= home_url() ?>/acessorios">
+                        <div class="image">
+                            <img src="<?= $assets; ?>/colete-salva-vidas.webp" alt="">
+                        </div>
+                        <p class="text">Acessórios</p>
+                    </a>
                 </li>
                 <li>
-                    <div class="image">
-                        <img src="<?= $assets; ?>/prancha-de-remo.webp" alt="">
-                    </div>
-                    <p class="text">Locação</p>
+                    <a href="<?= home_url() ?>/locacao">
+                        <div class="image">
+                            <img src="<?= $assets; ?>/prancha-de-remo.webp" alt="">
+                        </div>
+                        <p class="text">Locação</p>
+                    </a>
                 </li>
                 <li>
-                    <div class="image">
-                        <img src="<?= $assets; ?>/canoa.webp" alt="">
-                    </div>
-                    <p class="text">Passeios</p>
+                    <a href="<?= home_url() ?>/passeios">
+                        <div class="image">
+                            <img src="<?= $assets; ?>/canoa.webp" alt="">
+                        </div>
+                        <p class="text">Passeios</p>
+                    </a>
                 </li>
                 <li>
-                    <div class="image">
-                        <img src="<?= $assets; ?>/armazem.webp" alt="">
-                    </div>
-                    <p class="text">Guardaria</p>
+                    <a href="<?= home_url() ?>/guardaria">
+                        <div class="image">
+                            <img src="<?= $assets; ?>/armazem.webp" alt="">
+                        </div>
+                        <p class="text">Guardaria</p>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -88,7 +98,7 @@
                 <p class="text">
                     Com o objetivo de minimizar o estresse diário e também pela possibilidade de praticar uma atividade física em ambiente aberto, com mais liberdade, é que os alunos da Guardaí recorrem ao esporte. Outros benefícios que a modalidade proporciona são: bom condicionamento físico, aprimora a concentração E desenvolve o espírito de equipe.
                 </p>
-                <a href="#" class="button">Leia mais</a>
+                <a href="<?= home_url() ?>/quem-somos" class="button">Leia mais</a>
             </div>
         </div>
     </section>

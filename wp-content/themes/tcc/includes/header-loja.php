@@ -8,8 +8,8 @@
                 </h1>
             </a>
             <ul>
-                <li><a href="<?= $url; ?>/servicos">Loja</a></li>
-                <li><a href="<?= $url; ?>">Voltar para Home</a></li>
+                <li><a href="<?= $url; ?>/servicos">Home</a></li>
+                <li><a href="<?= $url; ?>">Blog</a></li>
             </ul>
         </div>
 

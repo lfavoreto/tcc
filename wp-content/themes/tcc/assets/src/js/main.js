@@ -58,8 +58,16 @@
             prevArrow: "<div class='slick-arrow prev'></div>",
             nextArrow: "<div class='slick-arrow next'></div>",
         });
+
+        if((window.location.pathname.includes('/eventos/')) || (window.location.pathname.includes('/2022/')) ){
+            document.title = document.getElementById('postName').innerHTML;
+
+            var conteudo = encodeURIComponent(document.title + " " + window.location.href);
+            document.getElementById("whatsapp-share-btt").href = "https://api.whatsapp.com/send?text=" + conteudo;
+        }
         
         var qt = $('.single-product-page .product.product_cat-guardaria .in-stock').html().replace(/[^0-9]/g,'');
         $('.single-product-page .product.product_cat-guardaria .in-stock').html(qt + ' vagas disponíveis');
+
     });
 })(jQuery);

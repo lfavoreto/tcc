@@ -57,12 +57,15 @@ section.noticias{
         display: flex;
         justify-content: center;
         padding-top: 2rem;
+        position: relative;
+        z-index: 1;
 
         @include mobile{
             flex-wrap: wrap;       
         }
 
         .news{
+            background: #FFF;
             border-radius: 20px;
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
             display: flex;
@@ -97,7 +100,7 @@ section.noticias{
                 font-family: $Nunito;
                 padding: 1.5rem 1rem;
                 position: relative;
-                min-height: 238px;
+                min-height: 200px;
 
                 .title{
                     font-weight: 800;

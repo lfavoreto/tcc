@@ -1,0 +1,22 @@
+2022-05-31T13:23:15+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Query as array in C:\xampp\htdocs\tcc\wp-includes\class-wp-query.php:3377
+Stack trace:
+#0 C:\xampp\htdocs\tcc\wp-includes\class-wp-query.php(3406): WP_Query->next_post()
+#1 C:\xampp\htdocs\tcc\wp-includes\query.php(979): WP_Query->the_post()
+#2 C:\xampp\htdocs\tcc\wp-content\themes\tcc\index.php(40): the_post()
+#3 C:\xampp\htdocs\tcc\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\tcc\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\tcc\index.php(17): require('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown, em C:\xampp\htdocs\tcc\wp-includes\class-wp-query.php, na linha 3377
+
+2022-05-31T13:23:47+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Query as array in C:\xampp\htdocs\tcc\wp-includes\class-wp-query.php:3377
+Stack trace:
+#0 C:\xampp\htdocs\tcc\wp-includes\class-wp-query.php(3406): WP_Query->next_post()
+#1 C:\xampp\htdocs\tcc\wp-includes\query.php(979): WP_Query->the_post()
+#2 C:\xampp\htdocs\tcc\wp-content\themes\tcc\index.php(39): the_post()
+#3 C:\xampp\htdocs\tcc\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\tcc\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\tcc\index.php(17): require('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown, em C:\xampp\htdocs\tcc\wp-includes\class-wp-query.php, na linha 3377
+

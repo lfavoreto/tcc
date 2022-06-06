@@ -20,16 +20,16 @@
         <div class="container">
             <div class="content">
                 <p class="text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius mauris mollis porta rhoncus. Pellentesque vehicula arcu quis risus finibus placerat. In lectus tellus, pretium sed dolor quis, luctus vestibulum ligula. Sed molestie, tortor eget rutrum pretium, eros eros luctus magna, sed bibendum est enim et augue. Nullam mattis, ipsum id vehicula porta, purus lacus venenatis odio, id finibus nisi libero a turpis. Etiam ac turpis finibus, ullamcorper velit non, semper orci. Duis posuere eros porttitor maximus vestibulum. Nulla elementum luctus gravida. Mauris a urna felis.
+                    Com o objetivo de minimizar o estresse diário e também pela possibilidade de praticar uma atividade física em ambiente aberto, com mais liberdade, é que os alunos da Guardaí recorrem ao esporte. Outros benefícios que a modalidade proporciona são: bom condicionamento físico, aprimora a concentração E desenvolve o espírito de equipe.
                 </p>
                 <p class="text">
-                    Duis a ligula porttitor, maximus justo a, pharetra est. Cras congue augue lectus, et congue urna pulvinar efficitur. Ut erat nisi, volutpat at metus eu, feugiat tempus tellus. Vestibulum volutpat accumsan mauris sed tincidunt. Quisque nunc lacus, sollicitudin ut feugiat ac, semper ut ex.
+                    Nossa guardaria tem uma das mais privilegiadas localizações de toda a baixada, bastando atravessar a rua para colocar o "pé na areia".
                 </p>
                 <p class="text">
-                    Duis a ligula porttitor, maximus justo a, pharetra est. Cras congue augue lectus, et congue urna pulvinar efficitur. Ut erat nisi, volutpat at metus eu, feugiat tempus tellus. Vestibulum volutpat accumsan mauris sed tincidunt. Quisque nunc lacus, sollicitudin ut feugiat ac, semper ut ex.
+                    A praia tem águas protegidas, perfeita para aprender SUP, ou iniciação à canoagem havaiana.
                 </p>
                 <p class="text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius mauris mollis porta rhoncus. Pellentesque vehicula arcu quis risus finibus placerat. In lectus tellus, pretium sed dolor quis, luctus vestibulum ligula. Sed molestie, tortor eget rutrum pretium, eros eros luctus magna, sed bibendum est enim et augue. Nullam mattis, ipsum id vehicula porta, purus lacus venenatis odio, id finibus nisi libero a turpis. Etiam ac turpis finibus, ullamcorper velit non, semper orci. Duis posuere eros porttitor maximus vestibulum. Nulla elementum luctus gravida. Mauris a urna felis.
+                    Além de seu barco estar em boas mãos, a microregião possui ótima infraestrutura, com padaria, restaurantes, pousadas e estacionamentos.
                 </p>
             </div>
         </div>

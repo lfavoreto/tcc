@@ -14,9 +14,7 @@
     
             @include mobile{
                 justify-content: center;
-                max-height: 0;
                 order: 2;
-                overflow: hidden;
                 transition: all .3s ease;
                 width: 100%;
             }

@@ -9,7 +9,7 @@
         <div class="position">
             <div class="container">
                 <?php include 'includes/breadcrumb.php'; ?>
-                <h2 class="title"><?= get_the_title(); ?></h2>
+                <h2 class="title">Eventos</h2>
             </div>
         </div>
     </section>
@@ -17,28 +17,27 @@
     <section class="content">
         <div class="wrapper">
             <div class="container">
-                <form action="#" class="form">
-                    <h3 class="text">Faça sua busca agora mesmo!</h3>
+                <form role="search" action="<?= esc_url( home_url('eventos/') );?>" method="GET" class="form">
+                    <h3 class="text">Veja nossos eventos!</h3>
                     <div class="campos">
-                        <input type="text" placeholder="Buscar">
-                        <select name="" id="">
-                            <option value="">Filtrar por data</option>
-                        </select>
+                        
                     </div>
                 </form>
 
                 <?php
-                    $eventos = new WP_Query(array(
+
+                    $eventos = array(
                         'post_type' => 'eventos',
                         'posts_per_page' => 4,
                         'order' => 'ASC',
                         'paged' => $paged,
-                    ));
+                    );
+
+                    query_posts( $eventos );
                 ?>
 
-                    <?php if($eventos->have_posts()): ?>
                         <ul class="list">
-                            <?php while($eventos->have_posts()): $eventos->the_post(); ?>
+                            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                             <li>
                                 <div class="image">
                                     <img src="<?= get_field('imagem') ?>" alt="">

@@ -1,0 +1,80 @@
+.share{
+    align-items: center;
+    display: flex;
+    padding-bottom: 2rem;
+    width: 100%;
+
+    .likely__widget_whatsapp{
+        display: none;
+
+        @media screen and (max-width: 991px) {
+            display: inline-block;
+        }
+    }
+
+    #whatsapp-share-btt{
+        display: flex;
+        transition: all .3s ease;
+
+        @media screen and (max-width: 991px) {
+            display: none;
+        }
+
+        &:hover{
+            transform: scale(1.1);
+        }
+
+        span{
+            display: flex;
+            height: 100%;
+            width: 100%;
+
+            .icon{
+                width: 35px;
+                left: 0;
+                object-fit: contain;
+                position: relative;
+                top: 0;
+                height: 35px;
+            }
+        }
+    }
+}
+
+.likely{
+    display: flex;
+    margin: 0;
+    margin-left: 1rem;
+
+    .likely__icon{
+        display: none;
+    }
+
+    .likely__button{
+        padding: 0;
+
+        span{
+            display: block;
+            height: 100%;
+            width: 100%;
+
+            .icon{
+                height: 100%;
+                left: 0;
+                object-fit: contain;
+                top: 0;
+                width: 100%;
+            }
+        }
+    }
+
+    .likely__widget{
+        background: transparent;
+        margin: 0;
+        transition: all .3s ease;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}

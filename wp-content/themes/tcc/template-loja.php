@@ -12,10 +12,14 @@
                     <div class="box-image">
                         <img src="<?= $assets; ?>/Kayak-Free.webp" alt="">
                     </div>
-                    <a href="#" class="button">Ver produtos</a>
+                    <a href="<?= home_url() ?>/produtos" class="button">Ver produtos</a>
                 </div>
                 <div class="item">
-                    <h2 class="title">Título 2</h2> 
+                    <h2 class="title">Guarde seu caiaque</h2>
+                    <div class="box-image">
+                        <img src="<?= $assets; ?>/Kayak-Free.webp" alt="">
+                    </div>
+                    <a href="<?= home_url() ?>/guardaria" class="button">Ver vagas</a>
                 </div>
             </div>
         </div>

@@ -3,6 +3,9 @@
     padding: 0 1rem;
     position: relative;
     z-index: 10;
+    @media screen and (max-width: 991px) {
+        margin-top: 2rem;
+    }
 
     .wrapper{
         background: #FFF;
@@ -29,6 +32,29 @@
             @include mobile{
                 flex-direction: column;
                 width: 100%;
+            }
+
+            label{
+                box-sizing: border-box;
+                margin-right: .5rem;
+                position: relative;
+                width: 50%;
+
+                input{
+                    box-sizing: border-box;
+                    width: 100%;
+                }
+
+                button{
+                    background: none;
+                    border: none;
+                    color: $blue;
+                    cursor: pointer;
+                    position: absolute;
+                    right: .5rem;
+                    top: 50%;
+                    transform: translate(0, -50%);
+                }
             }
 
             input, select{
@@ -58,14 +84,19 @@
         }
     }
 
+    
     .list{
         display: grid;
         gap: 1rem;
         grid-template-columns: repeat(3, 32%);
         padding: 2rem 0;
-
+        
         @include mobile{
             grid-template-columns: repeat(1, 100%);
+        }
+        
+        .nto{
+            padding: 3rem 0 15rem;
         }
 
         .news{

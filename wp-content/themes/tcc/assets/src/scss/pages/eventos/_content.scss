@@ -3,6 +3,9 @@
     padding: 0 1rem;
     position: relative;
     z-index: 10;
+    @media screen and (max-width: 991px) {
+        margin-top: 2rem;
+    }
 
     .wrapper{
         background: #FFF;

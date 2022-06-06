@@ -9,7 +9,7 @@
         <div class="position">
             <div class="container">
                 <?php include 'includes/breadcrumb.php'; ?>
-                <h2 class="title"><?= get_the_title(); ?></h2>
+                <h2 class="title">Notícias</h2>
             </div>
         </div>
     </section>
@@ -17,26 +17,24 @@
     <section class="content">
         <div class="wrapper">
             <div class="container">
-                <form action="#" class="form">
+                <form role="search" action="<?= esc_url( home_url('noticias/') );?>" method="GET" class="form">
                     <h3 class="text">Faça sua busca agora mesmo!</h3>
                     <div class="campos">
-                        <input type="text" placeholder="Buscar">
-                        <select name="" id="">
-                            <option value="">Categorias</option>
-                        </select>
+                        <label for="s">
+                            <input type="text" name="s" id="s" placeholder="Buscar">
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                </svg>
+                            </button>
+                        </label>
+                        <?php wp_dropdown_categories();?>
                     </div>
                 </form>
 
-                <?php
-                    $posts = new WP_Query(array(
-                        'post_type' => 'post',
-                        'posts_per_page' => 6,
-                    ));
-                ?>
 
-                    <?php if($posts->have_posts()): ?>
-                        <div class="list">
-                            <?php while($posts->have_posts()): $posts->the_post(); ?>
+                    <div class="list">
+                        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                             <a href="<?= get_the_permalink() ?>" class="news">
                                 <div class="image">
                                     <img src="<?= get_the_post_thumbnail_url() ?>" alt="">
@@ -58,6 +56,10 @@
                                 </div>
                             </a>
                             <?php endwhile; ?>
+                            <?php else: ?>
+                                <span class="nto">
+                                    Nenhuma notícia encontrada
+                                </span>
                         </div>
                     <?php endif; ?>
                 </div>
